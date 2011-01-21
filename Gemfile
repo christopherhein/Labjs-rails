@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # Add Rails
-gem "rails", ">= 3.0.0"
+gem "rails", ">= 2.3.5"
 
 group :development do
   gem "shoulda", ">= 0"
