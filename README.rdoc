@@ -1,6 +1,21 @@
 = labjs-rails
 
-Description goes here.
+*********** WORK IN PROGRESS ***********
+
+
+Helper for adding Labjs instead of using javascript_include_tag 
+
+== Usage
+
+You have to initialize the Labjs before you start using it.
+ 
+  <%= labjs_init('labjs') %>
+
+After you have done this you can use labjs_include_tag to chain your loading
+  - Make sure you start by loading up your framework
+  - Then you can pass in an array of other scripts to be loaded
+
+  <%= labjs_include_tag('jquery.min', ['jquery.pageloader.min', 'jquery.shading.min', 'jquery.scrollingcontent.min', 'jquery.fancyblend.min'])
 
 == Contributing to labjs-rails
  
@@ -17,3 +32,4 @@ Description goes here.
 Copyright (c) 2011 Christopher Hein. See LICENSE.txt for
 further details.
 
+== Credits
