@@ -1,6 +1,5 @@
 source "http://rubygems.org"
 
-# Add Rails
 gem "rails", ">= 2.3.5"
 
 group :development do
