@@ -15,8 +15,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "labjs-rails"
   gem.homepage = "http://github.com/christopherhein/labjs-rails"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Add labjs to your rails apps}
+  gem.description = %Q{Quick way of adding labjs to your rails applications through a view helpers}
   gem.email = "me@christopherhein.com"
   gem.authors = ["Christopher Hein"]
 
