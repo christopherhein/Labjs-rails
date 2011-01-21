@@ -23,7 +23,7 @@ module Labjs
     end
     
     def labjs_format(file, dir)
-      unless file =~ "http://"
+      unless file =~ /http:
         file = "/#{dir}/#{file}" unless file =~ /\/?#{dir}/
         file.gsub!(/\/+/, '/')
         file = "#{file}.js" unless file =~ /\.js$/
