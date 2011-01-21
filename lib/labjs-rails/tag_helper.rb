@@ -8,7 +8,7 @@ module Labjs
       file.gsub!(/\/+/, '/')
       file = "#{file}.js" unless file =~ /\.js$/
       file = "/#{file}" unless file =~ /^\//
-      raw("<script type=\"text/javascript\" src=\"#{file}\"></script>")
+      "<script type=\"text/javascript\" src=\"#{file}\"></script>".html_safe
     end
     
     def labjs_include_tag(required, files = [], dir=DEFAULT_DIR)
@@ -28,7 +28,7 @@ module Labjs
         scripts += ".script('"+file+"')"
       end
       scripts += "</script>"
-      raw(scripts)
+      scripts.html_safe
     end
 
   end
