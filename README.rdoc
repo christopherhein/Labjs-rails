@@ -1,8 +1,5 @@
 = labjs-rails
 
-*********** WORK IN PROGRESS ***********
-
-
 Helper for adding Labjs instead of using javascript_include_tag 
 
 == Usage
@@ -12,10 +9,21 @@ You have to initialize the Labjs before you start using it. Using the file name 
   <%= labjs_load('labjs') %>
 
 After you have done this you can use labjs_include_tag to chain your loading
-- This allows you to wait after individual loads by using a hash and having the include the word require
+This allows you to wait after individual loads by using a hash and having the include the word require
 
-  <%= labjs_include_tag('require_jquery' => 'jquery.min', 'require_pageloader' => 'jquery.pageloader.min', 'shading' => 'jquery.shading.min', 'scrolling' => 'jquery.scrollingcontent.min', 'require_fancy_blend' => 'jquery.fancyblend.min') %>
+The following allows you to require files to load first:
 
+  <%= labjs_include_tag(:require => ["jquery.min"]) %>
+  
+This is is how you setup multiple requirements and allow you to load scripts after that:
+
+  <%= labjs_include_tag(:files => ['jquery.cookie', 'jquery.pageloader'], :require => ['jquery.min', 'jquery.ui']) %>
+  
+The whole file has basic syntax and allows your to require any amount of files first then load in the following scripts after works.
+
+Good Luck. 
+  
+  
 == Contributing to labjs-rails
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
