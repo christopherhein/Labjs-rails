@@ -11,10 +11,11 @@ end
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
+require 'rails/all'
 require 'shoulda'
-require 'labjs-rails'
 require 'rails/test_help'
 require 'rails/generators'
+require 'labjs-rails'
 
 class SomeController
   include Labjs::TagHelper

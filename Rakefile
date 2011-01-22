@@ -19,7 +19,6 @@ Jeweler::Tasks.new do |gem|
   gem.description = %Q{Quick way of adding labjs to your rails applications through a view helpers}
   gem.email = "me@christopherhein.com"
   gem.authors = ["Christopher Hein"]
-
 end
 Jeweler::RubygemsDotOrgTasks.new
 

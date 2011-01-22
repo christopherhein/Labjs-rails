@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "rails", ">= 2.3.5"
+gem "rails", ">= 3.0.0"
 
 group :development do
   gem "shoulda", ">= 0"
